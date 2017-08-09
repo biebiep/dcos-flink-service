@@ -44,7 +44,7 @@ RUN chmod -R ugo+rw /var/log/
 WORKDIR /
 
 # Copy custom build to image.
-COPY flink/flink-dist/target/flink-1.3.1-bin/ .
+COPY flink/flink-dist/target/flink-1.3.1-bin/ /flink-1.3.1/
 
 # Copy base Flink configuration to image.
 COPY conf/ flink-1.3.1/conf/
